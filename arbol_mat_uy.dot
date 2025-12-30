@@ -161,7 +161,7 @@ IPan -> RBalt
 
 /* */
 
-RMuniz [label="Richard Muñiz\nCIMAT, México 2006"]
+RMuniz [label="Richard Muñiz\n CIMAT, México 2006"]
 SD -> RMuniz
 
 /* */
@@ -272,7 +272,7 @@ ARov -> AGarcia /* primera mitad de su doctorado */
 
   APiazza [label="Adriana Piazza\n Chile y Montpellier II 2007"]
 
-  PGajardo [label="Pedro Gajardo\n SD"]
+  PGajardo [label="Pedro Gajardo\n ?"]
 
   PLorenzo [label="Pilar Lorenzo\n UTFSM-PUCV-UV 2022"]
 
@@ -700,8 +700,11 @@ subgraph cluster_datos{
     JMorel -> MGardella
     PMuse -> MGardella
 
+    RMarie [label="Raymond Marie\n ?"]
 
-    GRub [label="Gerardo Rubino\n SD"]
+    GRub [label="Gerardo Rubino\n Rennes 1984"]
+
+    RMarie -> GRub
 
     FRobledo [label="Franco Robledo\n Udelar - Rennes I 2005"]
 
@@ -712,7 +715,12 @@ subgraph cluster_datos{
     PRBocca [label="Pablo Rodríguez-Bocca\n Udelar - Rennes I 2008"]
 
     PRomero [label="Pablo Romero\n Udelar 2012"]
-    
+
+    JPiccini [label="Juan Piccini\n Udelar 2022"]
+
+    PRomero -> JPiccini
+    FRobledo -> JPiccini
+
     JGraneri [label="Jorge Graneri\n Udelar 2019"]
 
     EMizraji [label="Eduardo Mizraji\n Udelar 1980"]
@@ -745,7 +753,7 @@ subgraph cluster_pye{
     ECabana [label="Enrique Cabaña"]
     JKalemke [label="Juan Kalemkerian\n Udelar 2006"]
     MScavino [label="Marco Scavino\n Padova 1999"]
-    FPesarin [label="Fortunato Pesarin\n SD"]
+    FPesarin [label="Fortunato Pesarin\n ?"]
 
 GGiannakis [label="Georgios Giannakis\n Southern California 1986"]
 
@@ -762,7 +770,7 @@ PBermolen -> BMarenco
 
     FBac [label="François Baccelli\n Paris-Sud XI 1980"]
 
-    DRos [label="Dario Rossi\n SD"]
+    DRos [label="Dario Rossi\n ?"]
 
     VGoi [label="Valeria Goicoechea\n Udelar 2022"]
 
@@ -772,7 +780,7 @@ PBermolen -> BMarenco
 
     RFraiman [label="Ricardo Fraiman\nUBA 1980"]
 
-    CDeniau [label="Claude Deniau\n SD"]
+    CDeniau [label="Claude Deniau\n ?"]
 
     BGhattas [label="Badih Ghattas\n Aix-Marseille 2000"]
 
@@ -848,7 +856,7 @@ PBermolen -> BMarenco
 
 /* */
 
-    JBarbajan [label="José Fajardo\n SD"]
+    JBarbajan [label="José Fajardo\n ?"]
 
     FLedra [label="François Ledrappier\n Paris VI 1975"];
     PLessa [label="Pablo Lessa\n Udelar 2014"];
@@ -944,6 +952,8 @@ subgraph cluster_algebra{
     labeljust=left;
 */
 
+    /* */
+
     VDlab [label="Vlastimil B. Dlab\n Charles Univ. 1959"]
 
     IAssem [label="Ibrahim Assem\n Carleton 1981"]
@@ -953,23 +963,25 @@ subgraph cluster_algebra{
     VDlab -> IAssem
     IAssem -> VGubitosi
 
-    RParra [label="Rafael Parra\n Los Andes 2012"]
+    /* */
+
+    LSchwartz [label="Laurent Schwartz\n Strasbourg 1943"]
+
+    DLewis [label="Donald John Lewis\n Michigan 1950"]
+
+    EEnochs [label="Edgar Enochs\n Notre Dame 1958"] 
 
     JRada [label="Juan Rada\n Murcia 1996"]
 
     DBravo [label="Diego Bravo\n Los Andes 2011"]
 
-    EEnochs [label="Edgar Enochs\n SD"]
-
     VTrevisan [label="Vilmar Trevisan\n Kent State 1992"]
+
+    RParra [label="Rafael Parra\n Los Andes 2012"]
 
     FCubria [label="Florencia Cubría\n Udelar 2023"]
 
-    LSchwartz [label="Laurent Schwartz\n Strasbourg 1943"]
-
-    BBeauzamy [label="Bernard Beauzamy\n Paris Diderot 1976"]
-
-    SWang [label="Shyh-Horng Wang\n MIT 1971"]
+    DLewis -> EEnochs
 
     JRada -> DBravo
     EEnochs -> DBravo
@@ -978,10 +990,17 @@ subgraph cluster_algebra{
     VTrevisan -> FCubria
 
     LSchwartz -> BBeauzamy
+
     BBeauzamy -> VTrevisan
     SWang -> VTrevisan
 
     JRada -> RParra
+
+    /* */
+
+    BBeauzamy [label="Bernard Beauzamy\n Paris Diderot 1976"]
+
+    SWang [label="Shyh-Horng Wang\n MIT 1971"]
 
     OVilla [label="Orlando Villamayor\n Córdoba 1946"]
 
@@ -1021,7 +1040,7 @@ subgraph cluster_algebra{
 
     MPerez [label="Marco Pérez\n Québec à Montréal 2014"]
 
-    AJoyal [label="André Joyal\n SD"]
+    AJoyal [label="André Joyal\n ?"]
 
     AGon [label="Ana González\n CINVESTAV-IPN 2010"]
 
@@ -1069,6 +1088,7 @@ subgraph cluster_algebra{
 
     MLan -> JVivero
     ASol -> JVivero
+
 /*  } */
 
 /* #################### */
