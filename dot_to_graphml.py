@@ -1,3 +1,7 @@
+####
+# Codigo aportado por Bernardo Marenco.
+####
+
 import pydot
 import networkx as nx
 import re
