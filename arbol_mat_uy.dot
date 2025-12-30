@@ -38,7 +38,7 @@ digraph G {
 
   /* Personas (sin categorizar por areas) */
 
-SD [label="?"] // para los casos sin datos de direccion de tesis
+SD [label="NA"] // para los casos sin datos de direccion de tesis
 
 
 /* */
@@ -99,11 +99,15 @@ MStillman -> MVelasco
 
 /* */
 
-ATuring [label="Alan Turing\nPrinceton 1938"]
-RGandy [label="Robin Gandy\nCambridge 1953"]
-MHyland [label="Martin Hyland\nOxford 1975"]
-ILopez [label="Ignacio López Franco\nCambridge 2008"]
-CVasilak [label="Christina Vasilakopoulou\nCambridge 2014"]
+ATuring [label="Alan Turing\n Princeton 1938"]
+
+RGandy [label="Robin Gandy\n Cambridge 1953"]
+
+MHyland [label="Martin Hyland\n Oxford 1975"]
+
+ILopez [label="Ignacio López Franco\n Cambridge 2008"]
+
+CVasilak [label="Christina Vasilakopoulou\n Cambridge 2014"]
 
 ATuring -> RGandy
 RGandy -> MHyland
@@ -131,10 +135,11 @@ ELopez -> TAcosta
 
 /* */
 
-WTucker [label="Warwick Tucker\nUppsala 1998"]
-AHammer [label="Andy Hammerlindl\nToronto 2009"]
+WTucker [label="Warwick Tucker\n Uppsala 1998"]
 
-ATayler [label="Audrey Tyler\nMonash, Australia 2023"]
+AHammer [label="Andy Hammerlindl\n Toronto 2009"]
+
+ATayler [label="Audrey Tyler\n Monash, Australia 2023"]
 
 WTucker -> ATayler
 AHammer -> ATayler
@@ -166,12 +171,12 @@ SD -> RMuniz
 
 /* */
 
-MAnderson [label="Michael Anderson\nCalifornia, Berkeley 1981"]
+MAnderson [label="Michael Anderson\n California, Berkeley 1981"]
 
-MReiris [label="Martín Reiris\nNew York at Stony Brook 2005"]
+MReiris [label="Martín Reiris\n New York at Stony Brook 2005"]
 
-JPeraza [label="Javier Peraza\nUdelar 2024"]
-IBusta [label="Ignacio Bustamante\nUdelar 2025"]
+JPeraza [label="Javier Peraza\n Udelar 2024"]
+IBusta [label="Ignacio Bustamante\n Udelar 2025"]
 
 MAnderson -> MReiris
 
@@ -238,7 +243,7 @@ ARov -> AGarcia /* primera mitad de su doctorado */
 
   EMaderna [label="Ezequiel Maderna\n ENS Lyon 2000"]
 
-  AFathi [label="Albert Fathi\n 1980"]
+  AFathi [label="Albert Fathi\n NA 1980"]
 
   PHaiss [label="Peter Haissinsky\n Paris-Sud XI 1998"]
 
@@ -272,7 +277,7 @@ ARov -> AGarcia /* primera mitad de su doctorado */
 
   APiazza [label="Adriana Piazza\n Chile y Montpellier II 2007"]
 
-  PGajardo [label="Pedro Gajardo\n ?"]
+  PGajardo [label="Pedro Gajardo\n NA"]
 
   PLorenzo [label="Pilar Lorenzo\n UTFSM-PUCV-UV 2022"]
 
@@ -299,7 +304,9 @@ ARov -> AGarcia /* primera mitad de su doctorado */
   
   AGroth -> PBermolenthelot
   AGroth -> JLVerdier
-  
+
+  JLVerdier -> GGSprinberg
+
   PBermolenthelot -> ATreibich
   JLVerdier -> ATreibich
   
@@ -309,9 +316,6 @@ ARov -> AGarcia /* primera mitad de su doctorado */
   APereyra [label="Angel Pereyra\n Grenoble I - Udelar 2000"]
 
   GGSprinberg [label="Gerardo Gonzalez-Sprinberg\n Paris Diderot - Paris 7 1977"]
-
-//	AGroth -> JLVerdier // es correcto pero esta mas arriba
-	JLVerdier -> GGSprinberg
 
     GHoch -> WFerrer
 
@@ -640,9 +644,9 @@ subgraph cluster_datos{
  */
     MFariello [label="María Inés Fariello\n Paul Sabatier 2013"]
 
-    MSCristobal [label="Magali SanCristobal\n ?"]
+    MSCristobal [label="Magali SanCristobal\n NA"]
 
-    SBoitard [label="Simon Boitard\n ?"]
+    SBoitard [label="Simon Boitard\n NA"]
 
     HNaya [label="Hugo Naya\n Udelar 2004"]
 
@@ -700,7 +704,7 @@ subgraph cluster_datos{
     JMorel -> MGardella
     PMuse -> MGardella
 
-    RMarie [label="Raymond Marie\n ?"]
+    RMarie [label="Raymond Marie\n NA"]
 
     GRub [label="Gerardo Rubino\n Rennes 1984"]
 
@@ -750,10 +754,13 @@ subgraph cluster_pye{
     labelloc=top;
     labeljust=left;
 */
-    ECabana [label="Enrique Cabaña"]
+    ECabana [label="Enrique Cabaña\n NA"]
+
     JKalemke [label="Juan Kalemkerian\n Udelar 2006"]
+
     MScavino [label="Marco Scavino\n Padova 1999"]
-    FPesarin [label="Fortunato Pesarin\n ?"]
+
+    FPesarin [label="Fortunato Pesarin\n NA"]
 
 GGiannakis [label="Georgios Giannakis\n Southern California 1986"]
 
@@ -770,17 +777,17 @@ PBermolen -> BMarenco
 
     FBac [label="François Baccelli\n Paris-Sud XI 1980"]
 
-    DRos [label="Dario Rossi\n ?"]
+    DRos [label="Dario Rossi\n NA"]
 
     VGoi [label="Valeria Goicoechea\n Udelar 2022"]
 
     JMat [label="Matthieu Jonckheere\n École Polytechnique 2005"]
 
-    VYohai [label="Victor Yohai\nBerkeley 1969"]
+    VYohai [label="Victor Yohai\n Berkeley 1969"]
 
-    RFraiman [label="Ricardo Fraiman\nUBA 1980"]
+    RFraiman [label="Ricardo Fraiman\n UBA 1980"]
 
-    CDeniau [label="Claude Deniau\n ?"]
+    CDeniau [label="Claude Deniau\n NA"]
 
     BGhattas [label="Badih Ghattas\n Aix-Marseille 2000"]
 
@@ -791,7 +798,7 @@ PBermolen -> BMarenco
     BGhattas -> MBourel
     RFraiman -> MBourel
 
-    ACuev [label="Antonio Cuevas\n 1981"]
+    ACuev [label="Antonio Cuevas\n NA 1981"]
 
     AChol [label="Alejandro Cholaquidis\n Udelar 2014"]
 
@@ -819,20 +826,24 @@ PBermolen -> BMarenco
 
     ATablar [label="Ana Tablar\n UNS, Argentina 2007"]
 
+    */
+
 /* */
 
     MShub [label="Michael Shub\n California 1967"];
-    JDed [label="Jean-Pierre Dedieu\n 1975"];
+
+    JDed [label="Jean-Pierre Dedieu\n NA 1975"];
     
     DArmentano [label="Diego Armentano\n Udelar 2012"];
+
     FCarrasco [label="Federico Carrasco\n Udelar 2025"];
 
     DArmentano -> FCarrasco
 
 /* */
 
-    AKolmo [label="Andrei Kolmogorov\nLomonosov 1925"]
-    AShiry [label="Albert Shiryaev\nSteklov 1961"]
+    AKolmo [label="Andrei Kolmogorov\n Lomonosov 1925"]
+    AShiry [label="Albert Shiryaev\n Steklov 1961"]
 
     AKolmo -> AShiry
     AShiry -> EMor
@@ -856,7 +867,7 @@ PBermolen -> BMarenco
 
 /* */
 
-    JBarbajan [label="José Fajardo\n ?"]
+    JBarbajan [label="José Fajardo\n NA"]
 
     FLedra [label="François Ledrappier\n Paris VI 1975"];
     PLessa [label="Pablo Lessa\n Udelar 2014"];
@@ -916,7 +927,7 @@ subgraph cluster_analisis{
 */
     RExel [label="Ruy Exel\n Berkeley 1985"]
 
-    FAbadie [label="Fernando Abadie\n USP 1999"]
+    FAbadie [label="Fernando Abadie\n Sao Paulo 1999"]
 
     DFerraro [label="Damián Ferraro\n Udelar 2016"]
 
@@ -1012,7 +1023,7 @@ subgraph cluster_algebra{
 
     MLan [label="Marcelo Lanzilotta\n Udelar 2000"];
 
-    STrep [label="Sonia Trepode\n USP 1996"];
+    STrep [label="Sonia Trepode\n Sao Paulo 1996"];
 
     GMata [label="Gustavo Mata\n Udelar 2015"];
 
@@ -1040,7 +1051,7 @@ subgraph cluster_algebra{
 
     MPerez [label="Marco Pérez\n Québec à Montréal 2014"]
 
-    AJoyal [label="André Joyal\n ?"]
+    AJoyal [label="André Joyal\n NA"]
 
     AGon [label="Ana González\n CINVESTAV-IPN 2010"]
 
