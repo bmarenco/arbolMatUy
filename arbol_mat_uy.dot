@@ -1,0 +1,1099 @@
+/*
+
+Árbol genealógico de la comunidad matemática de Uruguay.
+
+Generado mediante Graphviz: https://graphviz.org/
+
+Para exportar el árbol a una imagen, desde línea de comandos ejecutar: dot arbol_mat_uy.dot -Tpng > arbol_mat_uy.png
+
+Fuentes:
+    - Mathematics Genealogy Project: https://www.mathgenealogy.org/,
+    - CvUy ANII: https://cvuy.uy/,
+    - Repositorio Colibrí Udelar: https://www.colibri.udelar.edu.uy/,
+    - Consulta a las personas involucradas.
+
+Matías Valdés - 12/22 a 12/25.
+
+This work is licensed under Creative Commons Attribution-ShareAlike 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+
+*/
+
+digraph G {
+  label = "MVD - 12/22 a 12/25";
+  fontsize = 20;
+  labelloc = bottom;
+  labeljust = right;
+  
+  pack = true
+  
+//  dpi = 150 // resolución para imprimir
+
+//  landscape = true
+//  layout = fdp
+  
+  /* Formato */
+  graph [rankdir=LR] // nodos de izquierda a derecha
+  node [fontname="Helvetica, Arial, sans-serif", color=lightblue, style=filled]
+
+
+  /* Personas (sin categorizar por areas) */
+
+SD [label="?"] // para los casos sin datos de direccion de tesis
+
+
+/* */
+
+JFernandez [label="Julián Fernandez\n UBA 2002"]
+
+NWolanski [label="Noemí Wolanski\n UBA 1983"]
+
+LPezzo [label="Leandro Del Pezzo\n UBA 2009"]
+
+NWolanski -> JFernandez
+JFernandez -> LPezzo
+
+/* */
+
+SVaradhan [label="Srinivasa Varadhan\n Indian Statistical Institute 1963"]
+
+IArmendariz [label="Ines Armendariz\n New York University 2001"]
+
+PFerrari [label="Pablo Ferrari\n Univ. São Paulo 1982"]
+
+EAndjel [label="Enrique Andjel\n Univ. California, LA 1980"]
+
+NFrevenza [label="Nicolás Frevenza\n UBA 2017"]
+
+
+SVaradhan -> IArmendariz
+EAndjel -> PFerrari
+
+IArmendariz -> NFrevenza
+PFerrari -> NFrevenza
+
+
+/* */
+
+SCosta [label="Sueli Costa\nCampinas 1982"]
+
+DPanario [label="Daniel Panario\nToronto 1997"]
+
+CQureshi [label="Claudio Qureshi\nCampinas 2015"]
+
+SCosta -> CQureshi
+DPanario -> CQureshi
+
+/* */
+
+OZariski [label="Oscar Zariski\nUniversità di Roma 1925"]
+
+DMumford [label="David Mumford\nHarvard 1961"]
+
+MStillman [label="Michael Stillman\nHarvard 1983"]
+
+MVelasco [label="Mauricio Velasco\nCornell 2007"]
+
+OZariski -> DMumford
+DMumford -> MStillman
+MStillman -> MVelasco
+
+/* */
+
+ATuring [label="Alan Turing\nPrinceton 1938"]
+RGandy [label="Robin Gandy\nCambridge 1953"]
+MHyland [label="Martin Hyland\nOxford 1975"]
+ILopez [label="Ignacio López Franco\nCambridge 2008"]
+CVasilak [label="Christina Vasilakopoulou\nCambridge 2014"]
+
+ATuring -> RGandy
+RGandy -> MHyland
+
+MHyland -> ILopez
+
+MHyland -> CVasilak
+ILopez -> CVasilak
+
+/* */
+
+JMarti [label="José Gómez Martí\nPolitécnica de Catalunya 1986"]
+
+ECanale [label="Eduardo Canale\nPolitécnica de Catalunya 2003"]
+
+JMarti -> ECanale
+
+/* */
+
+TAcosta [label="Telmo Acosta\nSão Carlos 2024"]
+
+ELopez [label="Edivaldo Lopes dos Santos\nSão Paulo 2005"]
+
+ELopez -> TAcosta
+
+/* */
+
+WTucker [label="Warwick Tucker\nUppsala 1998"]
+AHammer [label="Andy Hammerlindl\nToronto 2009"]
+
+ATayler [label="Audrey Tyler\nMonash, Australia 2023"]
+
+WTucker -> ATayler
+AHammer -> ATayler
+
+/* */
+
+AHaef [label="André Haefliger\nUniversité de Paris 1958"]
+
+TVust [label="Thierry Vust\nGenève 1974"]
+CWeber [label="Claude Weber\nGenève 1967"]
+
+IPan [label="Iván Pan\nGénève, Suiza 1996"]
+RBalt [label = "Rene Baltazar\nUdelar - UFRGS 2014"]
+
+
+AHaef -> TVust
+AHaef -> CWeber
+
+TVust -> IPan
+CWeber -> IPan
+
+IPan -> RBalt
+
+
+/* */
+
+RMuniz [label="Richard Muñiz\nCIMAT, México 2006"]
+SD -> RMuniz
+
+/* */
+
+MAnderson [label="Michael Anderson\nCalifornia, Berkeley 1981"]
+
+MReiris [label="Martín Reiris\nNew York at Stony Brook 2005"]
+
+JPeraza [label="Javier Peraza\nUdelar 2024"]
+IBusta [label="Ignacio Bustamante\nUdelar 2025"]
+
+MAnderson -> MReiris
+
+MReiris -> JPeraza
+MReiris -> IBusta
+
+
+/* */
+
+ARittatore [label="Álvaro Rittatore\n Joseph Fourier Grenoble I 1997"]
+
+MBrion [label="Michel Brion\n Pierre-et-Marie-Curie - Paris VI 1982"]
+
+JDixmier [label="Jacques Dixmier\n Université de Paris 1949"]
+
+JDixmier -> MBrion
+MBrion -> ARittatore
+
+
+MPera [label="Manuel de Pera Garcia\n Universidade de Sao Paulo 1988"]
+
+FTal [label="Fábio Armando Tal\n Universidade de Sao Paulo 2001"]
+
+THenrik [label="Tobias Henrik Jager\n Friedrich-Alexander Erlangen-Nurnberg 2005"]
+
+APasseggi [label="Alejandro Passeggi\n Friedrich-Alexander Erlangen-Nurnberg 2013"]
+
+AGarcia [label="Alejo García Sassi\n Udelar 2024"]
+
+MPera -> FTal
+THenrik -> APasseggi
+
+APasseggi -> AGarcia
+FTal -> AGarcia
+
+
+  JMassera [label="José Luis Massera\n (1915-2002)"]
+
+  RLaguardia [label="Rafael Laguardia\n (1906-1980)"]
+  
+  IME [label="IME\n 1942", color="lightgreen"]
+  IMERL [label="IMERL\n 1987", color="lightgreen"]
+  
+  JMassera -> IME
+  RLaguardia -> IME
+  IME -> IMERL
+
+  JSchaffer [label="Jorge Schäffer\n Univ. de Zurich 1957"]
+
+  RNevan [label="Rolf Nevanlinna\n Helsingin yliopisto 1919"]
+
+  RNevan -> JSchaffer
+
+  MMart [label="Matilde Martinez\n CIMAT 2005"];
+
+  GGuerber [label="Gustavo Guerberoff\nUniv. Nacional de Córdoba 1997"]
+
+  GRaggio [label="Guido Raggio\n ETH Zürich 1981"]
+
+  APortela [label="Aldo Portela\n Univ. de São Paulo 2004"]
+
+  EFaria [label="Edson de Faria\n City Univ. NY 1992"]
+
+  EMaderna [label="Ezequiel Maderna\n ENS Lyon 2000"]
+
+  AFathi [label="Albert Fathi\n 1980"]
+
+  PHaiss [label="Peter Haissinsky\n Paris-Sud XI 1998"]
+
+  MCarrasco [label="Matias Carrasco\n Aix-Marseille 2011"]
+
+  MBourdon [label="Marc Bourdon\n Paris-Sud XI 1993"]
+
+  ESequeira [label="Emiliano Sequeira\n Udelar - Lille 2020"]
+
+  JBortha [label="Juan Pablo Borthagaray\n UBA 2017"]
+
+  GAcosta [label="Gabriel Acosta\n UBA 1999"]
+
+  RDuran [label="Ricardo Durán\n UBA 1981"]
+
+  OGil [label="Omar Gil\n Autónoma de Madrid 1996"]
+
+  JVazquez [label="Juan Vázquez\n Complutense de Madrid 1979"]
+
+  JVazquez -> OGil
+
+  RArocena [label="Rodrigo Arocena\n Central de Venezuela 1979"]
+
+  MCotlar [label="Mischa Cotlar\n Chicago 1953"]
+
+  MCotlar -> RArocena
+
+  RCominetti [label="Roberto Cominetti\n Blaise Pascal 1989"]
+
+  PCartigny  [label="Pierre Cartigny\n Globe de Paris 1997"]
+
+  APiazza [label="Adriana Piazza\n Chile y Montpellier II 2007"]
+
+  PGajardo [label="Pedro Gajardo\n SD"]
+
+  PLorenzo [label="Pilar Lorenzo\n UTFSM-PUCV-UV 2022"]
+
+  RCominetti -> APiazza
+  PCartigny -> APiazza
+
+  APiazza -> PLorenzo
+  PGajardo -> PLorenzo
+
+  JDieudonne [label="Jean Dieudonné\n ENS Paris 1931"]
+
+  AGroth [label="Alexander Grothendieck\n Henri Poincaré Nancy 1 1953"]
+
+  JLVerdier [label="Jean-Louis Verdier\n Univ. de Paris 1967"]
+
+  PBermolenthelot [label="Pierre Berthelot\n Paris Diderot - Paris 7 1972"]
+
+  ATreibich [label="Armando Treibich\n Rennes 1 1991"]
+
+  PFledrich [label="Pierre Flédrich\n Univ. Artois 2003"]
+
+  JDieudonne -> AGroth
+  LSchwartz -> AGroth
+  
+  AGroth -> PBermolenthelot
+  AGroth -> JLVerdier
+  
+  PBermolenthelot -> ATreibich
+  JLVerdier -> ATreibich
+  
+  ATreibich -> PFledrich
+
+
+  APereyra [label="Angel Pereyra\n Grenoble I - Udelar 2000"]
+
+  GGSprinberg [label="Gerardo Gonzalez-Sprinberg\n Paris Diderot - Paris 7 1977"]
+
+//	AGroth -> JLVerdier // es correcto pero esta mas arriba
+	JLVerdier -> GGSprinberg
+
+    GHoch -> WFerrer
+
+    WFerrer -> MHaim
+
+    WFerrer -> AAbella
+    NAndru -> AAbella
+
+    WFerrer -> APereyra
+    GGSprinberg -> APereyra
+
+
+  /* Relaciones */
+
+  ECabana -> JKalemke
+
+  RDuran -> GAcosta
+  GAcosta -> JBortha
+
+  EMor -> ASosa
+  JBarbajan -> ASosa
+
+  PHaiss -> MCarrasco
+  MCarrasco -> ESequeira
+  MBourdon -> ESequeira
+
+  AFathi -> EMaderna
+
+  EFaria -> APortela
+
+  GRaggio -> GGuerber
+
+  MWsche -> JLeon
+
+  EMor -> FDal
+  MWsche -> FDal
+
+  EMor -> FCro
+
+  FOliu [label="Facundo Oliú\n Udelar 2025"]
+
+  SChrist [label="Sören Christensen\n Christian Albrecht de Kiel 2010"]
+
+  AIrle [label="Albrecht Irle\n Münster 1973"]
+
+  AIrle -> SChrist
+
+  SChrist -> FOliu
+  EMor -> FOliu
+  
+
+  SSmale -> MShub
+
+
+/* ####################
+subgraph cluster_logica{
+    label="Lógica"
+    labelloc=top;
+    labeljust=left;
+*/
+    MGuille [label="Mauricio Guillermo\nParis Diderot 2008"]
+
+    JKrivine [label="Jean-Louis Krivine\nParis 1967"]
+
+    JKrivine -> MGuille
+
+    HHerbelin [label="Hugo Herbelin\nParis Diderot - Paris 7 1995"]
+
+    AMiquel [label="Alexandre Miquel\nParis Diderot 2001"]
+
+    EMiquey [label="Étienne Miquey\nUdelar - Paris Diderot 2017"]
+
+    HHerbelin -> AMiquel
+
+    HHerbelin -> EMiquey
+    AMiquel -> EMiquey
+ 
+    FCastro [label="Félix Castro\nUdelar - Paris Cité 2024"]
+
+    HHerbelin -> FCastro
+    AMiquel -> FCastro
+
+
+
+/*  } */
+
+/* ####################
+subgraph cluster_sisdin{
+    label="Sistemas Dinámicos"
+    labelloc=top;
+    labeljust=left;
+*/
+
+    ECat [label="Eleonora Catsigeras\n IMPA 1995"]
+
+    PGuiraud [label="Pierre Guiraud\n Université de Provence 2004"]
+
+    ACalderon [label="Alfredo Calderón\n PUCV, UTFSM, UV 2020"]
+
+    ECat -> ACalderon
+    PGuiraud -> ACalderon
+
+    FRHertz [label="Federico Rodriguez-Hertz\n IMPA 2001"]
+
+    BYemini [label="Bruno Yemini\n UTFSM-PUCV-UV 2022"]
+
+    FValenzuela [label="Francisco Valenzuela\n IMPA 2009"]
+
+    RSaghin [label="Radu Saghin\n Northwestern 2005"]
+
+    EPujals [label="Enrique Pujals\n IMPA 1996"]
+
+    XGom [label="Xavier Gomez-Mont Avalos\n Princeton 1978"]
+
+    RMar [label="Roberto Markarian\n IMPA 1990"]
+
+    JPalis [label="Jacob Palis, Jr.\n California 1968"]
+
+    SSmale [label="Stephen Smale\n Michigan 1957"]
+
+    RBott [label="Raoul Bott\n Carnegie Mellon 1949"]
+
+    RPot [label="Rafael Potrie\n Udelar 2012"]
+
+    MSam [label="Martin Sambarino\n IMPA 1998"]
+
+    SCrov [label="Sylvain Crovisier\n Paris-Sud XI 2001"]
+
+    Lpineyrua [label="Luis Piñeyrúa\n Udelar 2022"]
+
+    Smartin [label="Santiago Martinchich\n Udelar Paris-Saclay 2023"]
+
+    CBon [label="Christian Bonatti\n Paris-Sud XI 1984"]
+
+    ADal [label="Adriana Da Luz\n Udelar 2017"]
+
+    RMan [label="Ricardo Mañé\n IMPA 1973"]
+
+    MPat [label="Miguel Paternain\n IMPA 1990"]
+
+    ARov [label="Alvaro Rovella\n IMPA 1991"]
+
+    JIgle [label="Jorge Iglesias\n Udelar 2006"]
+
+    JFran [label="Jean-François Quint\n ENS 2001"]
+
+    ASam [label="Andrés Sambarino\n Paris XIII 2011"]
+
+    LCarv [label="León Carvajales\n Udelar 2020"]
+
+    NGuel [label="Nancy Guelman\n Udelar 2003"]
+
+    RUres [label=" Raul Ures\n IMPA 1993"]
+
+    MMatos [label="Mauricio Peixoto\n Rural de Rio 1948"]
+
+    JLew [label="Jorge Lewowicz\n Brown University 1966"]
+    
+    JRod [label="Jana Rodriguez-Hertz\n Udelar 1999"]
+
+    GNun [label="Gabriel Núñez\n Udelar 2018"]
+
+/* */
+
+    JGrois [label="Jorge Groisman\n Udelar 2007"]
+    JViei [label="José Vieitez\n Udelar 1992"]
+
+    GCous [label="Gonzalo Cousillas\n Udelar 2025"]
+
+    AGasull [label="Armengol Gasull\n Autónoma de Barcelona 1986"]
+
+    JLew -> JGrois
+    JLew -> JViei
+
+    JGrois -> GCous
+    AGasull -> GCous
+
+/* */
+
+HJudah [label="Haim Judah\n Hebrew Univ. of Jerusalem 1987"]
+
+WWoodin [label="William Woodin \n UC Berkeley 1984"]
+
+JBagaria [label="Joan Bagaria\n UC Berkeley 1991"]
+
+HJudah -> JBagaria
+WWoodin -> JBagaria
+
+JBagaria [label="Joan Bagaria\n UC Berkeley 1991"]
+
+LRosa [label="Luis Rosa\n Udelar 2025"]
+
+AArtigue -> LRosa
+JBagaria -> LRosa
+
+    MAchigar [label="Mauricio Achigar\n Udelar 2019"]
+    
+    AArtigue [label="Alfonso Artigue\n Udelar 2015"]    
+    
+    AArbieto [label="Alexander Arbieto\n IMPA 2004"]
+
+    ERego [label="Elias Rego\n UFRJ 2021"]
+
+    MViana [label="Marcelo Viana\n IMPA 1990"]
+    
+    MViana -> AArbieto
+    JPalis -> MViana
+
+    MJose [label="Maria Jose Pacifico\n IMPA 1980"]
+
+    WMelo [label="Welington de Melo\n IMPA 1972"]
+
+    JCorrea [label="Javier Correa\n IMPA 2014"]
+
+    MShannon [label="Mario Shannon\n Bourgogne 2020"]
+
+    SAlvarez [label="Sébastien Alvarez\n Bourgogne 2013"]
+
+    HRosen [label="Harold Rosenberg\n Berkeley 1963"]
+
+    Mherman [label="Michael Herman\n Paris-Sud XI 1976"]
+
+    JYoccoz [label="Jean-Christophe Yoccoz\n École Polytechnique 1985"]
+
+    HEnrich [label="Heber Enrich\n IMPA 1995"]
+
+    JXavier [label="Juliana Xavier\n Paris XIII 2011"]
+
+    PCalvez [label="Patrice Le Calvez\n Paris Diderot 1987"]
+
+    JAlonso [label="Juan Alonso\n Cornell 2012"]
+
+    KVogt [label="Karen Vogtmann\n California, Berkeley 1977"]
+
+    JBrum [label="Joaquín Brum\n Udelar 2017"]
+
+    AArtigue -> ERego
+    AArbieto -> ERego
+
+    MJose -> AArtigue
+    JViei -> AArtigue
+
+    JViei -> MAchigar
+    AArtigue -> MAchigar
+
+    XGom -> MMart
+    CBon -> MMart
+
+    JPalis -> MSam
+    MSam -> RPot
+    SCrov -> RPot
+
+    MSam -> ADal
+    CBon -> ADal
+
+    RBott -> SSmale
+    SSmale -> JPalis
+    JPalis -> RMar
+
+    JPalis -> WMelo
+    WMelo -> MJose
+
+    MMatos -> JLew
+
+    JLew -> JRod
+    JRod -> GNun
+
+    JPalis -> ECat
+    JPalis -> FRHertz
+
+    JPalis -> RUres
+    RUres -> NGuel
+
+    JFran -> ASam
+    RPot -> LCarv
+    ASam -> LCarv
+
+    RPot -> Lpineyrua
+    MSam -> Lpineyrua
+
+    RPot -> Smartin
+    SCrov -> Smartin
+
+    JPalis -> RMan
+    RMan -> MPat
+    RMan -> ARov
+    ARov -> JIgle
+
+    CBon -> MShannon
+    CBon -> SAlvarez
+
+    RMan -> HEnrich
+
+    Mherman -> JYoccoz
+    JYoccoz -> SCrov
+
+    HRosen -> CBon
+    HRosen -> Mherman
+    Mherman -> PCalvez
+    PCalvez -> JXavier
+
+    KVogt -> JAlonso
+    JAlonso -> JBrum
+    MPat -> JBrum
+
+    EPujals -> JCorrea
+
+    JPalis -> EPujals
+    EPujals -> FValenzuela
+
+    FValenzuela -> BYemini
+    RSaghin -> BYemini
+
+    PGuarino [label="Pablo Guarino\n IMPA 2012"]
+
+    WMelo -> PGuarino
+    EPujals -> PGuarino
+
+/*  } */
+
+/* ####################
+subgraph cluster_datos{
+    label="Ciencia de Datos"
+    labelloc=top;
+    labeljust=left;
+ */
+    MFariello [label="María Inés Fariello\n Universtié Paul Sabatier 2013"]
+
+    MSCristobal [label="Magali SanCristobal\n ?"]
+
+    SBoitard [label="Simon Boitard\n ?"]
+
+    HNaya [label="Hugo Naya\n Udelar 2004"]
+
+    MSCristobal -> MFariello
+    SBoitard -> MFariello
+    HNaya -> MFariello
+
+    JMorel [label="Jean-Michel Morel\n Paris VI 1985"]
+
+    GSapiro [label="Guillermo Sapiro\n Technion 1993"];
+
+    PMuse [label="Pablo Musé\n Cachan 2004"];
+
+    MFiori [label="Marcelo Fiori\n Udelar 2015"];
+
+    MGon [label="Mario González\n Udelar - Paris Descartes 2021"]
+
+    FMemoli [label="Facundo Mémoli\n Minnesota 2005"]
+    
+    AAlmansa [label="Andrés Almansa\n ENS Cachan 2002"]
+
+    MDelbracio [label="Mauricio Delbracio\n Udelar - ENS Cachan 2013"]
+
+    IReyOtero [label="Ives Rey-Otero\n ENS Cachan 2015"]
+
+    IDaub [label="Ingrid Daubechies\n Vrije Universiteit 1980"]
+
+    RWard [label="Rachel Ward\n Princeton 2009"]
+    
+    SVillar [label="Soledad Villar\n Texas at Austin 2017"]
+
+    IDaub -> RWard
+    RWard -> SVillar
+
+    GSapiro -> MFiori
+    PMuse -> MFiori
+
+    JMorel -> PMuse
+    JMorel -> AAlmansa
+    JMorel -> MDelbracio
+
+    GSapiro -> FMemoli
+
+    PMuse -> MDelbracio
+    AAlmansa -> MDelbracio
+
+    MDelbracio -> IReyOtero
+    JMorel -> IReyOtero
+
+    PMuse -> MGon
+    AAlmansa -> MGon
+    
+    MGardella [label="Marina Gardella\n Paris-Saclay 2023"]
+
+    JMorel -> MGardella
+    PMuse -> MGardella
+
+
+    GRub [label="Gerardo Rubino\n SD"]
+
+    FRobledo [label="Franco Robledo\n Udelar - Rennes I 2005"]
+
+    HCancela [label="Héctor Cancela\n INRIA 1996"]
+
+    CRisso [label="Claudio Risso\n Udelar 2014"]
+
+    PRBocca [label="Pablo Rodríguez-Bocca\n Udelar - Rennes I 2008"]
+
+    PRomero [label="Pablo Romero\n Udelar 2012"]
+    
+    JGraneri [label="Jorge Graneri\n Udelar 2019"]
+
+    EMizraji [label="Eduardo Mizraji\n Udelar 1980"]
+
+    GRub -> JGraneri
+    EMizraji -> JGraneri
+    
+    GRub -> HCancela
+    
+    GRub -> FRobledo
+    HCancela -> FRobledo
+
+    GRub -> PRBocca
+    HCancela -> PRBocca
+
+    FRobledo -> CRisso
+    GRub -> CRisso
+    
+    FRobledo -> PRomero
+    PRBocca -> PRomero
+     
+/*  } */
+
+/* ####################
+subgraph cluster_pye{
+    label="Probabilidad y Estadística"
+    labelloc=top;
+    labeljust=left;
+*/
+    ECabana [label="Enrique Cabaña"]
+    JKalemke [label="Juan Kalemkerian\n Udelar 2006"]
+    MScavino [label="Marco Scavino\n Padova 1999"]
+    FPesarin [label="Fortunato Pesarin\n SD"]
+
+GGiannakis [label="Georgios Giannakis\n University of Southern California 1986"]
+
+GMateos [label="Gonzalo Mateos\n University of Minnesota 2012"]
+
+BMarenco [label="Bernardo Marenco\n Udelar 2025"]  
+
+GGiannakis -> GMateos
+GMateos -> BMarenco
+
+PBermolen -> BMarenco
+
+    PBermolen [label="Paola Bermolen\n ParisTech 2010"]
+
+    FBac [label="François Baccelli\n Paris-Sud XI 1980"]
+
+    DRos [label="Dario Rossi\n SD"]
+
+    VGoi [label="Valeria Goicoechea\n Udelar 2022"]
+
+    JMat [label="Matthieu Jonckheere\n École Polytechnique 2005"]
+
+    VYohai [label="Victor Yohai\nBerkeley 1969"]
+
+    RFraiman [label="Ricardo Fraiman\nUBA 1980"]
+
+    CDeniau [label="Claude Deniau\n SD"]
+
+    BGhattas [label="Badih Ghattas\n Aix-Marseille 2000"]
+
+    MBourel [label="Mathias Bourel\n Aix-Marseille 2013"]
+
+    CDeniau -> BGhattas
+
+    BGhattas -> MBourel
+    RFraiman -> MBourel
+
+    ACuev [label="Antonio Cuevas\n 1981"]
+
+    AChol [label="Alejandro Cholaquidis\n Udelar 2014"]
+
+    ICan [label="Isabel Cañete\n Udelar 2003"]
+
+    LMor [label="Leonardo Moreno\n Udelar 2019"]
+
+    FGamboa [label="Fabrice Gamboa\n Paris-Sud XI 1989"]
+
+    JLeon [label="José León\n Central de Venezuela 1982"]
+
+    JPKahane [label="Jean-Pierre Kahane\n CNRS 1954"]
+
+    MWsche [label="Mario Wschebor\n Paris-Sud XI 1972"];
+
+    GPerera [label="Gonzalo Perera\n Udelar 1994"]
+
+    /* Estudiantes de Perera (al parecer sin vínculos con Uy)
+
+    JBavio [label="José Bavio\n UNS, Argentina 2014"]
+
+    MGuardiola [label="Melina Guardiola\n UNS, Argentina 2014"]
+
+    BMarron [label="Beatriz Marrón\n UNS, Argentina 2012"]
+
+    ATablar [label="Ana Tablar\n UNS, Argentina 2007"]
+
+/* */
+
+    MShub [label="Michael Shub\n California 1967"];
+    JDed [label="Jean-Pierre Dedieu\n 1975"];
+    
+    DArmentano [label="Diego Armentano\n Udelar 2012"];
+    FCarrasco [label="Federico Carrasco\n Udelar 2025"];
+
+    DArmentano -> FCarrasco
+
+/* */
+
+    AKolmo [label="Andrei Kolmogorov\nLomonosov 1925"]
+    AShiry [label="Albert Shiryaev\nSteklov 1961"]
+
+    AKolmo -> AShiry
+    AShiry -> EMor
+
+    EMor [label="Ernesto Mordecki\n Steklov 1994"]
+
+    FCro [label="Fabián Crocce\n Udelar 2012"]
+
+    FDal [label="Federico Dalmao\n Udelar 2013"];
+
+    FDOlivera [label="Federico De Olivera\n Udelar 2016"]
+
+    ASosa [label="Andrés Sosa\n Udelar 2018"]
+
+    LAspi [label="Laura Aspirot\n Udelar 2019"]
+
+    EMor -> LAspi
+    GRub -> LAspi
+
+    EMor -> FDOlivera
+
+/* */
+
+    JBarbajan [label="José Fajardo\n SD"]
+
+    FLedra [label="François Ledrappier\n Paris VI 1975"];
+    PLessa [label="Pablo Lessa\n Udelar 2014"];
+
+    VYohai -> RFraiman
+
+    RFraiman -> LMor
+    FGamboa -> LMor
+
+    RFraiman -> AChol
+    ACuev -> AChol
+
+    RFraiman -> ICan
+
+    PBermolen -> VGoi
+    JMat -> VGoi
+
+    DRos -> PBermolen
+    FBac -> PBermolen
+
+    ECabana -> MScavino
+    FPesarin -> MScavino
+
+    JPKahane -> MWsche
+    MWsche -> DArmentano
+    MShub -> DArmentano
+    JDed -> DArmentano
+
+    MWsche -> GPerera
+
+    FLedra -> PLessa
+    MMart -> PLessa
+/*  } */
+
+/* ####################
+subgraph cluster_teoria_numeros{
+    label="Teoría de Números"
+    labelloc=top;
+    labeljust=left;
+*/
+    FRod [label="Fernando Rodriguez-Villegas\n Ohio State 1990"]
+
+    GTor [label="Gonzalo Tornaría\n Texas at Austin 2005"];
+
+    GRam [label="Gustavo Rama\n Udelar 2020"];
+
+    FRod -> GTor
+    GTor -> GRam
+/*  } */
+
+
+/* ####################
+subgraph cluster_analisis{
+    label="Análisis"
+    labelloc=top;
+    labeljust=left;
+*/
+    RExel [label="Ruy Exel\n Berkeley 1985"]
+
+    FAbadie [label="Fernando Abadie\n USP 1999"]
+
+    DFerraro [label="Damián Ferraro\n Udelar 2016"]
+
+    ABuss [label="Alcides Buss\n Münster 2007"]
+
+    BAbadie [label="Beatriz Abadie\n Berkeley 1992"]
+
+    MAristide [label="Marc Aristide Rieffel\n Columbia 1963"]
+
+    MAristide -> BAbadie
+
+    MAristide -> RExel
+    RExel -> FAbadie
+
+    FAbadie -> DFerraro
+    ABuss -> DFerraro
+
+    CPhillips [label="Christopher Phillips\n California, Berkeley 1984"]
+
+    EGardella [label="Eusebio Gardella\n Oregon 2015"]
+
+    MAristide -> CPhillips
+    CPhillips -> EGardella
+
+
+
+/*  } */
+
+/* ####################
+subgraph cluster_algebra{
+    label="Álgebra"
+    labelloc=top;
+    labeljust=left;
+*/
+
+    VDlab [label="Vlastimil B. Dlab\n Charles University 1959"]
+
+    IAssem [label="Ibrahim Assem\n Carleton University 1981"]
+
+    VGubitosi [label="Viviana Gubitosi\n Sherbrooke, Canadá 2013"]
+
+    VDlab -> IAssem
+    IAssem -> VGubitosi
+
+    RParra [label="Rafael Parra\n Los Andes 2012"]
+
+    JRada [label="Juan Rada\n Murcia 1996"]
+
+    DBravo [label="Diego Bravo\n Los Andes 2011"]
+
+    EEnochs [label="Edgar Enochs\n SD"]
+
+    VTrevisan [label="Vilmar Trevisan\n Kent State 1992"]
+
+    FCubria [label="Florencia Cubría\n Udelar 2023"]
+
+    LSchwartz [label="Laurent Schwartz\n Strasbourg 1943"]
+
+    BBeauzamy [label="Bernard Beauzamy\n Paris Diderot 1976"]
+
+    SWang [label="Shyh-Horng Wang\n MIT 1971"]
+
+    JRada -> DBravo
+    EEnochs -> DBravo
+
+    DBravo -> FCubria
+    VTrevisan -> FCubria
+
+    LSchwartz -> BBeauzamy
+    BBeauzamy -> VTrevisan
+    SWang -> VTrevisan
+
+    JRada -> RParra
+
+    OVilla [label="Orlando Villamayor\n Córdoba 1946"]
+
+    FCoel [label="Flavio Coelho\n Liverpool 1990"]
+
+    AJones [label="Alfredo Jones\n Illinois 1962"]
+
+    IRein [label="Irving Reiner\n Cornell 1947"]
+
+    MLan [label="Marcelo Lanzilotta\n Udelar 2000"];
+
+    STrep [label="Sonia Trepode\n USP 1996"];
+
+    GMata [label="Gustavo Mata\n Udelar 2015"];
+
+    JVivero [label="José Vivero\n Udelar 2022"]
+
+    ASol [label="Andrea Solotar\n UBA 1988"];
+
+    DArt [label="Dalia Artenstein\n Udelar 2015"];
+
+    Jcop [label="Javier Cóppola\n Udelar 2023"];
+
+    EEllis [label="Eugenia Ellis\n Univ. Valladolid 2011"]
+
+    GCort [label="Guillermo Cortiñas\n UBA 1989"]
+
+    GHoch [label="Gerhard Hochschild\n Princeton 1941"]
+
+    WFerrer [label="Walter Ferrer\n Berkeley 1980"]
+
+    NAndru [label="Nicolás Andruskiewitsch\n Córdoba 1989"]
+
+    AAbella [label="Andres Abella\n Udelar 1999"]
+
+    MHaim [label="Mariana Haim\n Udelar 2006"]
+
+    MPerez [label="Marco Pérez\n Québec à Montréal 2014"]
+
+    AJoyal [label="André Joyal\n SD"]
+
+    AGon [label="Ana González\n CINVESTAV-IPN 2010"]
+
+    ELara [label="Ernesto Lara\n Stanford 1997"]
+
+    OMalherbe [label="Octavio Malherbe\n Ottawa 2010"]
+
+    PSelinger [label="Peter Selinger\n Pennsylvania 1997"]
+
+    PScott [label="Philip Scott\n Waterloo 1976"]
+
+    MPereira [label="Mariana Pereira\n Texas A&M 2006"]
+
+    SWithe [label="Sarah Witherspoon\n Chicago 1994"]
+
+    SWithe -> MPereira
+
+    PScott -> OMalherbe
+    PSelinger -> OMalherbe
+
+    ELara -> AGon
+
+    AJoyal -> MPerez
+
+
+    GCort -> EEllis
+
+    IRein -> AJones
+
+    AJones -> MLan
+    FCoel -> MLan
+
+    FCoel -> STrep
+
+    MLan -> GMata
+    STrep -> GMata
+
+    OVilla -> ASol
+    OVilla -> GCort
+
+    MLan -> DArt
+    ASol -> DArt
+
+    ASol -> Jcop
+
+    MLan -> JVivero
+    ASol -> JVivero
+/*  } */
+
+/* #################### */
+/* subgraph cluster_secretaria{
+    label = "Secretaría"
+    labelloc = top;
+    labeljust = left;
+
+    AOlivera [label="Ana Olivera\n IMERL - (xxxx-201x)"]
+
+    AChiriff [label="Ana Chiriff\n IMERL - (xxxx-2024)"]
+
+    MGuillemet [label="Maryori Guillemet\n IMERL - (19xx-20xx)"]
+
+    NPereira [label="Natalia Pereira\n IMERL - (20xx-2024)"]
+
+    CRussi [label="Camilo Russi\n IMERL (2024-)"]
+
+    LTappa [label="Lydia Tappa\n PEDECIBA (xxxx-)"]
+
+    AOlivera -> AChiriff
+    MGuillemet -> NPereira
+    AChiriff -> CRussi
+    NPereira -> CRussi
+    AAA -> LTappa
+
+} */
+
+}
