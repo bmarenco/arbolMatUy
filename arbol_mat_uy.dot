@@ -56,11 +56,11 @@ JFernandez -> LPezzo
 
 SVaradhan [label="Srinivasa Varadhan\n Indian Statistical Institute 1963"]
 
-IArmendariz [label="Ines Armendariz\n New York University 2001"]
+IArmendariz [label="Ines Armendariz\n New York 2001"]
 
-PFerrari [label="Pablo Ferrari\n Univ. São Paulo 1982"]
+PFerrari [label="Pablo Ferrari\n São Paulo 1982"]
 
-EAndjel [label="Enrique Andjel\n Univ. California, LA 1980"]
+EAndjel [label="Enrique Andjel\n California, LA 1980"]
 
 NFrevenza [label="Nicolás Frevenza\n UBA 2017"]
 
@@ -74,24 +74,24 @@ PFerrari -> NFrevenza
 
 /* */
 
-SCosta [label="Sueli Costa\nCampinas 1982"]
+SCosta [label="Sueli Costa\n Campinas 1982"]
 
-DPanario [label="Daniel Panario\nToronto 1997"]
+DPanario [label="Daniel Panario\n Toronto 1997"]
 
-CQureshi [label="Claudio Qureshi\nCampinas 2015"]
+CQureshi [label="Claudio Qureshi\n Campinas 2015"]
 
 SCosta -> CQureshi
 DPanario -> CQureshi
 
 /* */
 
-OZariski [label="Oscar Zariski\nUniversità di Roma 1925"]
+OZariski [label="Oscar Zariski\n Roma 1925"]
 
-DMumford [label="David Mumford\nHarvard 1961"]
+DMumford [label="David Mumford\n Harvard 1961"]
 
-MStillman [label="Michael Stillman\nHarvard 1983"]
+MStillman [label="Michael Stillman\n Harvard 1983"]
 
-MVelasco [label="Mauricio Velasco\nCornell 2007"]
+MVelasco [label="Mauricio Velasco\n Cornell 2007"]
 
 OZariski -> DMumford
 DMumford -> MStillman
@@ -141,13 +141,13 @@ AHammer -> ATayler
 
 /* */
 
-AHaef [label="André Haefliger\nUniversité de Paris 1958"]
+AHaef [label="André Haefliger\n Paris 1958"]
 
-TVust [label="Thierry Vust\nGenève 1974"]
-CWeber [label="Claude Weber\nGenève 1967"]
+TVust [label="Thierry Vust\n Genève 1974"]
+CWeber [label="Claude Weber\n Genève 1967"]
 
-IPan [label="Iván Pan\nGénève, Suiza 1996"]
-RBalt [label = "Rene Baltazar\nUdelar - UFRGS 2014"]
+IPan [label="Iván Pan\n Génève 1996"]
+RBalt [label = "Rene Baltazar\n Udelar - UFRGS 2014"]
 
 
 AHaef -> TVust
@@ -185,27 +185,28 @@ ARittatore [label="Álvaro Rittatore\n Joseph Fourier Grenoble I 1997"]
 
 MBrion [label="Michel Brion\n Pierre-et-Marie-Curie - Paris VI 1982"]
 
-JDixmier [label="Jacques Dixmier\n Université de Paris 1949"]
+JDixmier [label="Jacques Dixmier\n Paris 1949"]
 
 JDixmier -> MBrion
 MBrion -> ARittatore
 
 
-MPera [label="Manuel de Pera Garcia\n Universidade de Sao Paulo 1988"]
+MPera [label="Manuel de Pera Garcia\n Sao Paulo 1988"]
 
-FTal [label="Fábio Armando Tal\n Universidade de Sao Paulo 2001"]
+FTal [label="Fábio Tal\n Sao Paulo 2001"]
 
-THenrik [label="Tobias Henrik Jager\n Friedrich-Alexander Erlangen-Nurnberg 2005"]
+THenrik [label="Tobias Henrik Jager\n Friedrich-Alexander 2005"]
 
-APasseggi [label="Alejandro Passeggi\n Friedrich-Alexander Erlangen-Nurnberg 2013"]
+APasseggi [label="Alejandro Passeggi\n Friedrich-Alexander 2013"]
 
-AGarcia [label="Alejo García Sassi\n Udelar 2024"]
+AGarcia [label="Alejo García\n Udelar 2024"]
 
 MPera -> FTal
 THenrik -> APasseggi
 
 APasseggi -> AGarcia
 FTal -> AGarcia
+ARov -> AGarcia /* primera mitad de su doctorado */
 
 
   JMassera [label="José Luis Massera\n (1915-2002)"]
@@ -219,7 +220,7 @@ FTal -> AGarcia
   RLaguardia -> IME
   IME -> IMERL
 
-  JSchaffer [label="Jorge Schäffer\n Univ. de Zurich 1957"]
+  JSchaffer [label="Jorge Schäffer\n Zurich 1957"]
 
   RNevan [label="Rolf Nevanlinna\n Helsingin yliopisto 1919"]
 
@@ -227,11 +228,11 @@ FTal -> AGarcia
 
   MMart [label="Matilde Martinez\n CIMAT 2005"];
 
-  GGuerber [label="Gustavo Guerberoff\nUniv. Nacional de Córdoba 1997"]
+  GGuerber [label="Gustavo Guerberoff\n Nacional de Córdoba 1997"]
 
   GRaggio [label="Guido Raggio\n ETH Zürich 1981"]
 
-  APortela [label="Aldo Portela\n Univ. de São Paulo 2004"]
+  APortela [label="Aldo Portela\n São Paulo 2004"]
 
   EFaria [label="Edson de Faria\n City Univ. NY 1992"]
 
@@ -285,13 +286,13 @@ FTal -> AGarcia
 
   AGroth [label="Alexander Grothendieck\n Henri Poincaré Nancy 1 1953"]
 
-  JLVerdier [label="Jean-Louis Verdier\n Univ. de Paris 1967"]
+  JLVerdier [label="Jean-Louis Verdier\n Paris 1967"]
 
   PBermolenthelot [label="Pierre Berthelot\n Paris Diderot - Paris 7 1972"]
 
   ATreibich [label="Armando Treibich\n Rennes 1 1991"]
 
-  PFledrich [label="Pierre Flédrich\n Univ. Artois 2003"]
+  PFledrich [label="Pierre Flédrich\n Artois 2003"]
 
   JDieudonne -> AGroth
   LSchwartz -> AGroth
@@ -406,7 +407,7 @@ subgraph cluster_sisdin{
 
     ECat [label="Eleonora Catsigeras\n IMPA 1995"]
 
-    PGuiraud [label="Pierre Guiraud\n Université de Provence 2004"]
+    PGuiraud [label="Pierre Guiraud\n Provence 2004"]
 
     ACalderon [label="Alfredo Calderón\n PUCV, UTFSM, UV 2020"]
 
@@ -637,7 +638,7 @@ subgraph cluster_datos{
     labelloc=top;
     labeljust=left;
  */
-    MFariello [label="María Inés Fariello\n Universtié Paul Sabatier 2013"]
+    MFariello [label="María Inés Fariello\n Paul Sabatier 2013"]
 
     MSCristobal [label="Magali SanCristobal\n ?"]
 
@@ -667,7 +668,7 @@ subgraph cluster_datos{
 
     IReyOtero [label="Ives Rey-Otero\n ENS Cachan 2015"]
 
-    IDaub [label="Ingrid Daubechies\n Vrije Universiteit 1980"]
+    IDaub [label="Ingrid Daubechies\n Vrije 1980"]
 
     RWard [label="Rachel Ward\n Princeton 2009"]
     
@@ -746,9 +747,9 @@ subgraph cluster_pye{
     MScavino [label="Marco Scavino\n Padova 1999"]
     FPesarin [label="Fortunato Pesarin\n SD"]
 
-GGiannakis [label="Georgios Giannakis\n University of Southern California 1986"]
+GGiannakis [label="Georgios Giannakis\n Southern California 1986"]
 
-GMateos [label="Gonzalo Mateos\n University of Minnesota 2012"]
+GMateos [label="Gonzalo Mateos\n Minnesota 2012"]
 
 BMarenco [label="Bernardo Marenco\n Udelar 2025"]  
 
@@ -943,9 +944,9 @@ subgraph cluster_algebra{
     labeljust=left;
 */
 
-    VDlab [label="Vlastimil B. Dlab\n Charles University 1959"]
+    VDlab [label="Vlastimil B. Dlab\n Charles Univ. 1959"]
 
-    IAssem [label="Ibrahim Assem\n Carleton University 1981"]
+    IAssem [label="Ibrahim Assem\n Carleton 1981"]
 
     VGubitosi [label="Viviana Gubitosi\n Sherbrooke, Canadá 2013"]
 
@@ -1004,7 +1005,7 @@ subgraph cluster_algebra{
 
     Jcop [label="Javier Cóppola\n Udelar 2023"];
 
-    EEllis [label="Eugenia Ellis\n Univ. Valladolid 2011"]
+    EEllis [label="Eugenia Ellis\n Valladolid 2011"]
 
     GCort [label="Guillermo Cortiñas\n UBA 1989"]
 
