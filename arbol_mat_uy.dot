@@ -259,11 +259,24 @@ ARov -> AGarcia /* primera mitad de su doctorado */
 
   RDuran [label="Ricardo Durán\n UBA 1981"]
 
-  OGil [label="Omar Gil\n Autónoma de Madrid 1996"]
+/* */
+
+  HBrezis [label="Haim Brézis\n Paris 1966 1972"]
+
+  JDiaz [label="Jesus Diaz\n Complutense de Madrid 1976"]
 
   JVazquez [label="Juan Vázquez\n Complutense de Madrid 1979"]
 
+  OGil [label="Omar Gil\n Autónoma de Madrid 1996"]
+
+  HBrezis -> JVazquez
+  JDiaz -> JVazquez
+
   JVazquez -> OGil
+
+  HBrezis -> JMorel
+
+/* */
 
   RArocena [label="Rodrigo Arocena\n Central de Venezuela 1979"]
 
