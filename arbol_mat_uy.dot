@@ -463,7 +463,9 @@ subgraph cluster_sisdin{
 
     CBon [label="Christian Bonatti\n Paris-Sud XI 1984"]
 
-    ADal [label="Adriana Da Luz\n Udelar 2017"]
+    ADal [label="Adriana Da Luz\n Udelar Bourgogne 2017"]
+    
+    GLevitt [label="Gilbert Levitt\n Paris Diderot - Paris 7 1983"]
 
     RMan [label="Ricardo Mañé\n IMPA 1973"]
 
@@ -626,6 +628,8 @@ JBagaria -> LRosa
     JYoccoz -> SCrov
 
     HRosen -> CBon
+    GLevitt -> CBon
+
     HRosen -> Mherman
     Mherman -> PCalvez
     PCalvez -> JXavier
