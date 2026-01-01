@@ -171,6 +171,8 @@ SD -> RMuniz
 
 /* */
 
+BLawson [label="Blaine Lawson\n Stanford 1969"]
+
 MAnderson [label="Michael Anderson\n California, Berkeley 1981"]
 
 MReiris [label="Martín Reiris\n New York at Stony Brook 2005"]
@@ -178,6 +180,7 @@ MReiris [label="Martín Reiris\n New York at Stony Brook 2005"]
 JPeraza [label="Javier Peraza\n Udelar 2024"]
 IBusta [label="Ignacio Bustamante\n Udelar 2025"]
 
+BLawson -> MAnderson
 MAnderson -> MReiris
 
 MReiris -> JPeraza
