@@ -43,175 +43,197 @@ SD [label="NA"] // para los casos sin datos de direccion de tesis
 
 /* */
 
-JFernandez [label="Julián Fernandez\n UBA 2002"]
+    JFernandez [label="Julián Fernandez\n UBA 2002"]
 
-NWolanski [label="Noemí Wolanski\n UBA 1983"]
+    NWolanski [label="Noemí Wolanski\n UBA 1983"]
 
-LPezzo [label="Leandro Del Pezzo\n UBA 2009"]
+    LPezzo [label="Leandro Del Pezzo\n UBA 2009"]
 
-NWolanski -> JFernandez
-JFernandez -> LPezzo
-
-/* */
-
-SVaradhan [label="Srinivasa Varadhan\n Indian Statistical Institute 1963"]
-
-IArmendariz [label="Ines Armendariz\n New York 2001"]
-
-PFerrari [label="Pablo Ferrari\n São Paulo 1982"]
-
-EAndjel [label="Enrique Andjel\n California, LA 1980"]
-
-NFrevenza [label="Nicolás Frevenza\n UBA 2017"]
-
-
-SVaradhan -> IArmendariz
-EAndjel -> PFerrari
-
-IArmendariz -> NFrevenza
-PFerrari -> NFrevenza
-
+    NWolanski -> JFernandez
+    JFernandez -> LPezzo
 
 /* */
 
-SCosta [label="Sueli Costa\n Campinas 1982"]
+    SVaradhan [label="Srinivasa Varadhan\n Indian Statistical Institute 1963"]
 
-DPanario [label="Daniel Panario\n Toronto 1997"]
+    IArmendariz [label="Ines Armendariz\n New York 2001"]
 
-CQureshi [label="Claudio Qureshi\n Campinas 2015"]
+    PFerrari [label="Pablo Ferrari\n São Paulo 1982"]
 
-SCosta -> CQureshi
-DPanario -> CQureshi
+    EAndjel [label="Enrique Andjel\n California, LA 1980"]
 
-/* */
+    NFrevenza [label="Nicolás Frevenza\n UBA 2017"]
 
-OZariski [label="Oscar Zariski\n Roma 1925"]
 
-DMumford [label="David Mumford\n Harvard 1961"]
+    SVaradhan -> IArmendariz
+    EAndjel -> PFerrari
 
-MStillman [label="Michael Stillman\n Harvard 1983"]
-
-MVelasco [label="Mauricio Velasco\n Cornell 2007"]
-
-OZariski -> DMumford
-DMumford -> MStillman
-MStillman -> MVelasco
+    IArmendariz -> NFrevenza
+    PFerrari -> NFrevenza
 
 /* */
 
-ATuring [label="Alan Turing\n Princeton 1938"]
+    AConde [label="Antonio Conde\n Chicago 1971"]
 
-RGandy [label="Robin Gandy\n Cambridge 1953"]
+    SCosta [label="Sueli Costa\n Campinas 1982"]
 
-MHyland [label="Martin Hyland\n Oxford 1975"]
+    JGathen [label="Joachim von zur Gathen\n Zurich 1980"]
 
-ILopez [label="Ignacio López Franco\n Cambridge 2008"]
+    RMathon [label="Rudolf Mathon\n Toronto 1972"]
 
-CVasilak [label="Christina Vasilakopoulou\n Cambridge 2014"]
+    DPanario [label="Daniel Panario\n Toronto 1997"]
 
-ATuring -> RGandy
-RGandy -> MHyland
+    CQureshi [label="Claudio Qureshi\n Campinas 2015"]
 
-MHyland -> ILopez
+    AConde -> SCosta
 
-MHyland -> CVasilak
-ILopez -> CVasilak
+    JGathen -> DPanario
+    RMathon -> DPanario
 
-/* */
-
-JMarti [label="José Gómez Martí\nPolitécnica de Catalunya 1986"]
-
-ECanale [label="Eduardo Canale\nPolitécnica de Catalunya 2003"]
-
-JMarti -> ECanale
+    SCosta -> CQureshi
+    DPanario -> CQureshi
 
 /* */
 
-TAcosta [label="Telmo Acosta\nSão Carlos 2024"]
+    OZariski [label="Oscar Zariski\n Roma 1925"]
 
-ELopez [label="Edivaldo Lopes dos Santos\nSão Paulo 2005"]
+    DMumford [label="David Mumford\n Harvard 1961"]
 
-ELopez -> TAcosta
+    MStillman [label="Michael Stillman\n Harvard 1983"]
 
-/* */
+    MVelasco [label="Mauricio Velasco\n Cornell 2007"]
 
-WTucker [label="Warwick Tucker\n Uppsala 1998"]
-
-AHammer [label="Andy Hammerlindl\n Toronto 2009"]
-
-ATayler [label="Audrey Tyler\n Monash, Australia 2023"]
-
-WTucker -> ATayler
-AHammer -> ATayler
+    OZariski -> DMumford
+    DMumford -> MStillman
+    MStillman -> MVelasco
 
 /* */
 
-AHaef [label="André Haefliger\n Paris 1958"]
+    ATuring [label="Alan Turing\n Princeton 1938"]
 
-TVust [label="Thierry Vust\n Genève 1974"]
-CWeber [label="Claude Weber\n Genève 1967"]
+    RGandy [label="Robin Gandy\n Cambridge 1953"]
 
-IPan [label="Iván Pan\n Génève 1996"]
-RBalt [label = "Rene Baltazar\n Udelar - UFRGS 2014"]
+    MHyland [label="Martin Hyland\n Oxford 1975"]
 
+    ILopez [label="Ignacio López Franco\n Cambridge 2008"]
 
-AHaef -> TVust
-AHaef -> CWeber
+    CVasilak [label="Christina Vasilakopoulou\n Cambridge 2014"]
 
-TVust -> IPan
-CWeber -> IPan
+    ATuring -> RGandy
+    RGandy -> MHyland
 
-IPan -> RBalt
+    MHyland -> ILopez
 
-
-/* */
-
-RMuniz [label="Richard Muñiz\n CIMAT, México 2006"]
-SD -> RMuniz
+    MHyland -> CVasilak
+    ILopez -> CVasilak
 
 /* */
 
-MAnderson [label="Michael Anderson\n California, Berkeley 1981"]
+    JMarti [label="José Gómez Martí\nPolitécnica de Catalunya 1986"]
 
-MReiris [label="Martín Reiris\n New York at Stony Brook 2005"]
+    ECanale [label="Eduardo Canale\nPolitécnica de Catalunya 2003"]
 
-JPeraza [label="Javier Peraza\n Udelar 2024"]
-IBusta [label="Ignacio Bustamante\n Udelar 2025"]
-
-MAnderson -> MReiris
-
-MReiris -> JPeraza
-MReiris -> IBusta
-
+    JMarti -> ECanale
 
 /* */
 
-ARittatore [label="Álvaro Rittatore\n Joseph Fourier Grenoble I 1997"]
+    CBiasi [label="Carlos Biasi\n São Paulo 1981"]
 
-MBrion [label="Michel Brion\n Pierre-et-Marie-Curie - Paris VI 1982"]
+    ELopes [label="Edivaldo Lopes dos Santos\n São Paulo 2005"]
 
-JDixmier [label="Jacques Dixmier\n Paris 1949"]
+    TAcosta [label="Telmo Acosta\n São Carlos 2024"]
 
-JDixmier -> MBrion
-MBrion -> ARittatore
+    CBiasi -> ELopes
+    ELopes -> TAcosta
 
+/* */
 
-MPera [label="Manuel de Pera Garcia\n Sao Paulo 1988"]
+    LCarleson [label="Lennart Carleson\n Uppsala 1950"]
 
-FTal [label="Fábio Tal\n Sao Paulo 2001"]
+    WTucker [label="Warwick Tucker\n Uppsala 1998"]
 
-THenrik [label="Tobias Henrik Jager\n Friedrich-Alexander 2005"]
+    CPugh [label="Charles Pugh\n Johns Hopkins 1965"]
 
-APasseggi [label="Alejandro Passeggi\n Friedrich-Alexander 2013"]
+    AHammer [label="Andy Hammerlindl\n Toronto 2009"]
 
-AGarcia [label="Alejo García Sassi\n Udelar - Sao Paulo 2024"]
+    ATayler [label="Audrey Tyler\n Monash, Australia 2023"]
 
-MPera -> FTal
-THenrik -> APasseggi
+    LCarleson -> WTucker
+    CPugh -> AHammer
 
-APasseggi -> AGarcia
-FTal -> AGarcia
-ARov -> AGarcia /* primera mitad de su doctorado */
+    WTucker -> ATayler
+    AHammer -> ATayler
+
+/* */
+
+    AHaef [label="André Haefliger\n Paris 1958"]
+
+    TVust [label="Thierry Vust\n Genève 1974"]
+    CWeber [label="Claude Weber\n Genève 1967"]
+
+    IPan [label="Iván Pan\n Génève 1996"]
+    RBalt [label = "Rene Baltazar\n Udelar - UFRGS 2014"]
+
+    AHaef -> TVust
+    AHaef -> CWeber
+
+    TVust -> IPan
+    CWeber -> IPan
+
+    IPan -> RBalt
+
+/* */
+
+    RMuniz [label="Richard Muñiz\n CIMAT, México 2006"]
+
+    SD -> RMuniz
+
+/* */
+
+    BLawson [label="Blaine Lawson\n Stanford 1969"]
+
+    MAnderson [label="Michael Anderson\n California, Berkeley 1981"]
+
+    MReiris [label="Martín Reiris\n New York at Stony Brook 2005"]
+
+    JPeraza [label="Javier Peraza\n Udelar 2024"]
+    IBusta [label="Ignacio Bustamante\n Udelar 2025"]
+
+    BLawson -> MAnderson
+    MAnderson -> MReiris
+
+    MReiris -> JPeraza
+    MReiris -> IBusta
+
+/* */
+
+    ARittatore [label="Álvaro Rittatore\n Joseph Fourier Grenoble I 1997"]
+
+    MBrion [label="Michel Brion\n Pierre-et-Marie-Curie - Paris VI 1982"]
+
+    JDixmier [label="Jacques Dixmier\n Paris 1949"]
+
+    JDixmier -> MBrion
+    MBrion -> ARittatore
+
+/* */
+
+    MPera [label="Manuel de Pera Garcia\n Sao Paulo 1988"]
+
+    FTal [label="Fábio Tal\n Sao Paulo 2001"]
+
+    THenrik [label="Tobias Henrik Jager\n Friedrich-Alexander 2005"]
+
+    APasseggi [label="Alejandro Passeggi\n Friedrich-Alexander 2013"]
+
+    AGarcia [label="Alejo García Sassi\n Udelar - Sao Paulo 2024"]
+
+    MPera -> FTal
+    THenrik -> APasseggi
+
+    APasseggi -> AGarcia
+    FTal -> AGarcia
+    ARov -> AGarcia /* primera mitad de su doctorado */
 
 
   JMassera [label="José Luis Massera\n (1915-2002)"]
@@ -225,39 +247,103 @@ ARov -> AGarcia /* primera mitad de su doctorado */
   RLaguardia -> IME
   IME -> IMERL
 
-  JSchaffer [label="Jorge Schäffer\n Zurich 1957"]
-
-  RNevan [label="Rolf Nevanlinna\n Helsingin yliopisto 1919"]
-
-  RNevan -> JSchaffer
-
   MMart [label="Matilde Martinez\n CIMAT 2005"];
 
-  GGuerber [label="Gustavo Guerberoff\n Nacional de Córdoba 1997"]
+/* */
+    
+    /* Schaffer tiene dos doctorados, solo se considera el mas reciente. Habria que ver como incluir el otro tambien. */
 
-  GRaggio [label="Guido Raggio\n ETH Zürich 1981"]
+    ELindelof [label="Ernst Lindelof\n Helsingin yliopisto 1893"]
 
-  APortela [label="Aldo Portela\n São Paulo 2004"]
+    RNevanlinna [label="Rolf Nevanlinna\n Helsingin yliopisto 1919"]
 
-  EFaria [label="Edson de Faria\n City Univ. NY 1992"]
+    JSchaffer [label="Jorge Schäffer\n Zurich 1957"]
 
-  EMaderna [label="Ezequiel Maderna\n ENS Lyon 2000"]
+    ERisler [label="Enrique Risler\n Carnegie Mellon 1973"]
 
-  AFathi [label="Albert Fathi\n NA 1980"]
+    ELindelof -> RNevanlinna
+    RNevanlinna -> JSchaffer
+    JSchaffer -> ERisler
 
-  PHaiss [label="Peter Haissinsky\n Paris-Sud XI 1998"]
+/* */
 
-  MCarrasco [label="Matias Carrasco\n Aix-Marseille 2011"]
+    HPrimas [label="Hans Primas\n ETH Zurich 1961"]
 
-  MBourdon [label="Marc Bourdon\n Paris-Sud XI 1993"]
+    KOsterwalder [label="Konrad Osterwalder\n ETH Zurich 1970"]
 
-  ESequeira [label="Emiliano Sequeira\n Udelar - Lille 2020"]
+    GRaggio [label="Guido Raggio\n ETH Zurich 1981"]
 
-  JBortha [label="Juan Pablo Borthagaray\n UBA 2017"]
+    GGuerber [label="Gustavo Guerberoff\n Nacional de Córdoba 1997"]
 
-  GAcosta [label="Gabriel Acosta\n UBA 1999"]
+    HPrimas -> GRaggio
+    KOsterwalder -> GRaggio
 
-  RDuran [label="Ricardo Durán\n UBA 1981"]
+    GRaggio -> GGuerber
+
+/* */
+
+    DSullivan [label="Dennis Sullivan\n Princeton 1966"]
+
+    EFaria [label="Edson de Faria\n City Univ. NY 1992"]
+
+    APortela [label="Aldo Portela\n São Paulo 2004"]
+
+    DSullivan -> EFaria
+    EFaria -> APortela
+
+/* */
+
+    JMilnor [label="John Milnor\n Princeton 1954"]
+
+    LSiebenmann [label="Laurence Siebenmann\n Princeton 1965"]
+
+    AFathi [label="Albert Fathi\n NA 1980"]
+
+    EMaderna [label="Ezequiel Maderna\n ENS Lyon 2000"]
+
+    HSanchez [label="Hector Sanchez-Morgado\n Boston Univ. 1991"]
+
+    BPercino [label="Boris Percino-Figueroa\n UNAM 2016"]
+
+    JMilnor -> LSiebenmann
+    LSiebenmann -> AFathi
+    AFathi -> EMaderna
+
+    EMaderna -> BPercino
+    HSanchez -> BPercino
+
+/* */
+
+    HCartan [label="Henri Cartan\n Paris 1928"]
+
+    ADouady [label="Adrien Douady\n Paris 1966"]
+
+    PHaiss [label="Peter Haissinsky\n Paris-Sud XI 1998"]
+
+    MCarrasco [label="Matias Carrasco\n Aix-Marseille 2011"]
+
+    PPansu [label="Pierre Pansu\n Paris Diderot - Paris 7 1982"]
+
+    MBourdon [label="Marc Bourdon\n Paris-Sud XI 1993"]
+
+    ESequeira [label="Emiliano Sequeira\n Udelar - Lille 2020"]
+
+    HCartan -> ADouady
+    ADouady -> PHaiss
+    PHaiss -> MCarrasco
+
+    PPansu -> MBourdon
+
+    MCarrasco -> ESequeira
+    MBourdon -> ESequeira
+
+/* */
+
+    JBortha [label="Juan Pablo Borthagaray\n UBA 2017"]
+
+    GAcosta [label="Gabriel Acosta\n UBA 1999"]
+
+    RDuran [label="Ricardo Durán\n UBA 1981"]
 
 /* */
 
@@ -278,11 +364,21 @@ ARov -> AGarcia /* primera mitad de su doctorado */
 
 /* */
 
-  RArocena [label="Rodrigo Arocena\n Central de Venezuela 1979"]
+    AZygmund [label="Antoni Zygmund\n Warszawski 1923"]
 
-  MCotlar [label="Mischa Cotlar\n Chicago 1953"]
+    MCotlar [label="Mischa Cotlar\n Chicago 1953"]
 
-  MCotlar -> RArocena
+    RArocena [label="Rodrigo Arocena\n Central de Venezuela 1979"]
+
+    RBruzual [label="Ramón Bruzual\n Central de Venezuela 1986"]
+
+    AZygmund -> MCotlar
+    MCotlar -> RArocena
+
+    MCotlar -> RBruzual
+    RArocena -> RBruzual
+
+/* */
 
   RCominetti [label="Roberto Cominetti\n Blaise Pascal 1989"]
 
@@ -351,16 +447,6 @@ ARov -> AGarcia /* primera mitad de su doctorado */
   EMor -> ASosa
   JBarbajan -> ASosa
 
-  PHaiss -> MCarrasco
-  MCarrasco -> ESequeira
-  MBourdon -> ESequeira
-
-  AFathi -> EMaderna
-
-  EFaria -> APortela
-
-  GRaggio -> GGuerber
-
   MWsche -> JLeon
 
   EMor -> FDal
@@ -389,11 +475,19 @@ subgraph cluster_logica{
     labelloc=top;
     labeljust=left;
 */
-    MGuille [label="Mauricio Guillermo\nParis Diderot 2008"]
 
-    JKrivine [label="Jean-Louis Krivine\nParis 1967"]
+/* */
 
-    JKrivine -> MGuille
+    JKahane [label="Jean-Pierre Kahane\n CNRS 1954"]
+
+    JKrivine [label="Jean-Louis Krivine\n Paris 1967"]
+
+    MGuillermo [label="Mauricio Guillermo\n Paris Diderot Paris 7 2008"]
+
+    JKahane -> JKrivine
+    JKrivine -> MGuillermo
+
+/* */
 
     HHerbelin [label="Hugo Herbelin\nParis Diderot - Paris 7 1995"]
 
@@ -1070,26 +1164,51 @@ subgraph cluster_algebra{
 
     AJoyal [label="André Joyal\n NA"]
 
-    AGon [label="Ana González\n CINVESTAV-IPN 2010"]
+/* */
+
+    RCohen [label="Ralph Cohen\n Brandeis Univ. 1978"]
 
     ELara [label="Ernesto Lara\n Stanford 1997"]
 
-    OMalherbe [label="Octavio Malherbe\n Ottawa 2010"]
+    AGon [label="Ana González\n CINVESTAV-IPN 2010"]
+
+    RCohen -> ELara
+    ELara -> AGon
+
+/* */
+
+    AScedrov [label="Andre Scedrov\n New York at Buffalo 1981"]
 
     PSelinger [label="Peter Selinger\n Pennsylvania 1997"]
 
+    DHiggs [label="Denis Higgs\n McMaster 1970"]
+
     PScott [label="Philip Scott\n Waterloo 1976"]
 
-    MPereira [label="Mariana Pereira\n Texas A&M 2006"]
+    OMalherbe [label="Octavio Malherbe\n Ottawa 2010"]
 
-    SWithe [label="Sarah Witherspoon\n Chicago 1994"]
+    AScedrov -> PSelinger
 
-    SWithe -> MPereira
+    DHiggs -> PScott
 
     PScott -> OMalherbe
     PSelinger -> OMalherbe
 
-    ELara -> AGon
+/* */
+
+    GHigman [label="Graham Higman\n Oxford 1941"]
+
+    JAlperin [label="Jonathan Alperin\n Princeton 1961"]
+
+    SWithe [label="Sarah Witherspoon\n Chicago 1994"]
+
+    MPereira [label="Mariana Pereira\n Texas A&M 2006"]
+
+    GHigman -> JAlperin
+    JAlperin -> SWithe
+    SWithe -> MPereira
+
+/* */
 
     AJoyal -> MPerez
 
