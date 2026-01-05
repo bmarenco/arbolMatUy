@@ -2701,12 +2701,6 @@
   <data key="d6">Chicago</data>
   <data key="d7">1994</data>
 </node>
-<node id="\n">
-  <data key="d1"></data>
-  <data key="d5"></data>
-  <data key="d6"></data>
-  <data key="d7"></data>
-</node>
 <edge source="SD" target="RMuniz" id="e0">
   <data key="d9">"e,1167.8,368.87 1132.2,368.87 1139.7,368.87 1148.3,368.87 1157.5,368.87"</data>
 </edge>
